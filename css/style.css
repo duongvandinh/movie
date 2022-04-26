@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: ;
+}
+#header{
+    width: 100%;
+    height: 400px;
+}
+.header-title{
+    width: 50%;
+    height: 100%;
+}
+.header-title p {
+    position: absolute;
+    top: 70px;
+    left: 20%;
+    font-family: 'Bebas Neue';
+    color: grey;
+    text-transform: uppercase;
+}
+.header-title_boder{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 640px;
+    border: 2px solid gray;
+}
+.header-title_boder h4{
+    font-family: 'Lobster';
+    padding-left: 20px;
+    padding-top: 2px;
+}
+.header-content{
+    position: absolute;
+    top: 160px;
+    left: 7%;
+}
+.header-content h4{
+    color: #f00;
+    text-transform: uppercase;
+    font-family: 'Asap';
+}
+.header-content_add p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    padding-left: 186px;
+    color: grey;
+   
+}
+.header-content_add p:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 80px;
+    padding-left: 186px;
+}
+.header-content_add p span{
+    color: #f00;
+}
+.header-content_add p:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 105px;
+    padding-left: 166px;
+    text-transform: lowercase;
+}
+.header-content_add p:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 130px;
+    padding-left: 200px;
+    text-transform: lowercase;
+}
+.header-content_add button{
+    font-family: 'Asap';
+    width: 475px;
+    height: 50px;
+    margin-top: 150px;
+    background: #fff;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.header-slide{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 400px;
+
+}
+.header-slide img{
+    width: 100%;
+    height: 100%;
+}
+.slide{
+    position: absolute;
+    z-index: -1;
+    height: 398px;
+    top: 0;
+    
+}
+.slide img{
+    position: absolute;
+    width: 683px;
+}
+.side-conten{
+    display: none;
+}
+
+.dot{
+    margin-left: 200px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active{
+    display: block;
+}
+
+.dot-active{
+    background: none;
+    border: 1px solid #fff;
+}
+.push-menu{
+    position: fixed;
+    z-index: 99;
+    margin-left: 1306px;
+    width: 300px;
+    height: 100vh;
+    transition: linear .7s;
+}
+.toggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.toggle span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #1863ff;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+.toggle span:nth-child(1) {
+    transform: translateY(-12px);
+    width:20px;
+}
+.toggle.active span:nth-child(1){
+    width: 30px;
+    transform: translateY(0) rotate(-315deg);
+    transition-delay: 0.3s;
+}
+
+.toggle span:nth-child(2) {
+    transform: translateY(13px);
+    width:20px;
+}
+
+.toggle.active span:nth-child(2){
+    width: 30px;
+    transform: translateY(0) rotate(315deg);
+    transition-delay: 0.3s;
+
+}
+
+.toggle.active span:nth-child(3){
+    transform: translateX(90px);
+}
+.push_menu{
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(71, 75, 75, 0.849);
+}
+.push_menu-open{
+    transform: translateX(-248px);
+}
+.push-logo{
+    text-align: center;
+    margin-top: 20px;
+}
+.logo{
+    font-size: 70px;
+    color: #fff;
+}
+.list-menu{
+    text-align: center;
+    padding-left: 0%;
+    line-height: 4;
+    padding-top: 40px;
+}
+.list-menu a {
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Bebas Neue';
+    border-bottom: 3px solid transparent;
+    font-size: 20px;
+}
+
+.list-menu :hover a{
+    color: #fff;
+    border-bottom: 3px solid #FFF;
+    transition: linear .7s;
+}
+#content{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.main-conten{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(199, 194, 194, 0.616);
+    text-align: center;
+}
+.content-title{
+    padding-top: 20px;
+    color: #f00;
+    font-family: 'Lobster';
+}
+.content-text{
+    margin: -221px;
+    margin-top: 22px;
+    margin-left: 269px;
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+.number{
+    position: absolute;
+    font-size: 47px;
+    color: gray;
+    z-index: -1;
+    padding-left: 83px;
+}
+.text{
+    padding-top: -50px;
+}
